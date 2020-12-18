@@ -6,37 +6,42 @@
             CIPHER
         </title>
         <link rel="stylesheet" href="cipher.css"  type="text/css"> 
-        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Yeseva+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Krona+One&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <!--TITULO-->
-            <div class="title-container">
-                <h1 class="title">Secretos entre amigas</h1>
+            <div id="title-container">
+                <h1 class="title">SECRETOS ENTRE AMIGAS</h1>
+            </div>
+            <!--SUBTITULO-->
+            <div id="subtitle-container">
                 <marquee class="subtitle">¡Escribe un mensaje cifrado a tu mejor amiga!</marquee>
             </div>
-            <!--MENSAJE A DESCIFRAR-->
-            <span class="question-section">
-                <p>Mensaje</p>
-                <p><input type="type" class="format-input" id="......." maxlength="1000" value="Escribe tu mensaje"></p> <!--Acá va Js-->
-                <p>Desplazamiento</p>
-                <p><input type="number" class="format-input" id="displacement" size="7"></p> <!--Acá va Js-->
-                <p><button type="button" class="button">Descifrar</button>
-                <button type="button" class="button">Hacerlo secreto</button></p>
-                 <p>Mensaje secreto</p>
-                <p><input type="text" class="format-input" id="........" maxlength="1000" value="Mensaje secreto"></p> <!--Acá va Js-->
-            </span>
-            <!--IMAGEN-->
-            <span class="img-container">
-                <img src="img/img-cipher-01-b.jpg" width="350px" height="550px" alt="">
-            </span>
+            <!--IAMGEN-PREGUNTAS-->
+            <div id="question-image-container">
+                <div class="question-section">
+                    <p>Mensaje</p>
+                    <p><input class="format-input" id="newMessage" maxlength="1000" placeholder="Escribe tu mensaje"></p>
+                    <p>Desplazamiento</p>
+                    <p><input class="format-input" id="displacementUser" size="7"></p>
+                    <button class="button" id="button-01">code</button>
+                    <p>Mensaje secreto</p>
+                    <p id="final-image" class="final-image"></p>
+                    <button class="button-02" id="button-02">decode</button>
+                    <p id="final-image2" class="final-image2"></p>
+                </div>
+                <div class="img-container">
+                </div>
+            </div>
         </header>
-        <script>cipher.js</script>
-    </body>
-            <!--FOOTER-->
-    <footer>
-         <div class="footer">
-             <p>Website &copy; 2020 Jael Orea, all rights reserved.</p>
-         </div>
-    </footer>
+        <script src="index.js" type="module"></script>
+        <!--FOOTER-->
+        <footer id="footer-container">
+            <div class="footer">
+                <p>Website &copy; 2020 Jael Orea, all rights reserved.</p>
+            </div>
+        </footer>
+</body>
 </html>
+
