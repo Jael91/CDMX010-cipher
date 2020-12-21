@@ -1,0 +1,15 @@
+------conceptos que debo investigar
+stage en github
+repositorio 
+cque rayos es un commit
+que es una branch
+---------------------------- Comandos opcionales 
+git status  // te dice el status
+git branch // te muestra las branch y en que branch estas
+git remote -v //para ver el repositorio remoto 
+
+---------------comands for upload
+git add .
+git commit -m "aqui va el comentario en 3ra persona"
+git push origin master
+
