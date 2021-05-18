@@ -11,7 +11,6 @@ button.addEventListener("click", function(){
 });
 
 let button2 = document.getElementById("button-02");
-//let secretMessage2 = document.getElementById("final-image");
 
 button2.addEventListener("click", function() {
         const offsetFromInput = document.getElementById("displacementUser").value;
