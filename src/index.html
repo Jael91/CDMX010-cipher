@@ -12,30 +12,34 @@
         <header>
             <!--TITULO-->
             <div id="title-container">
-                <h1 class="title">SECRETOS ENTRE AMIGAS</h1>
+                <h1>SECRETOS ENTRE AMIGAS</h1>
             </div>
             <!--SUBTITULO-->
             <div id="subtitle-container">
-                <marquee class="subtitle">¡Escribe un mensaje cifrado a tu mejor amiga!</marquee>
-            </div>
-            <!--IMAGEN-PREGUNTAS-->
-            <div id="question-image-container">
-                <div class="question-section">
-                    <p>Mensaje</p>
-                    <p><input class="format-input" id="newMessage" maxlength="1000" placeholder="Escribe tu mensaje"></p>
-                    <p>Desplazamiento</p>
-                    <p><input class="format-input" id="displacementUser" size="7"></p>
-                    <button class="button" id="button-01">code</button>
-                    <p>Mensaje secreto</p>
-                    <p id="final-image" class="final-image"></p>
-                    <input id="resultadofinal" type="hidden" value="">
-                    <button class="button-02" id="button-02">decode</button>
-                    <p id="final-image2" class="final-image2"></p>
-                </div>
-                <div class="img-container">
-                </div>
+                <marquee>¡Escribe un palabras secretas a tu mejor amiga!</marquee>
             </div>
         </header>
+            <!--IMAGEN-PREGUNTAS-->
+            <div id="main-container">
+                <div class="question-container">
+                    <div class="second-container">
+                        <h3>Mensaje</h3>
+                        <input class="format-input" id="newMessage" maxlength="1000" placeholder="Escribe tu mensaje">
+                        <h3>Desplazamiento</h3>
+                        <input class="format-input" id="displacementUser" size="7" placeholder="Escribe un número">
+                        <button class="button" id="button-01">C</button>
+                        <h3>Mensaje codificado</h3>
+                        <div class="container-button-decode">
+                            <div id="code-result" class="code-result" type="text"></div>
+                            <button class="button button-02" id="button-02">D</button>
+                        </div>
+                        <input id="finalresult" type="hidden" value="">
+                        <h3>Mensaje decodificado</h3>
+                        <div id="decode-result" class="decode-result"></div>
+                    </div>
+                </div>
+                <div class="img-container"></div>
+            </div>
         <script src="index.js" type="module"></script>
         <!--FOOTER-->
         <footer id="footer-container">
